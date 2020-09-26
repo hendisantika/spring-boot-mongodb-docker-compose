@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+  fruit-database:
+    image: mongo:latest
+    container_name: "fruit-database"
+    ports:
+      - 27017:27017
+    command: --smallfiles
+  api:
+    image: fruit-service
+    ports:
+      - 8080:8080
+    links:
+      - fruit-database
