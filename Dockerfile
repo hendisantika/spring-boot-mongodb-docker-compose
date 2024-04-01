@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:jdk11u-alpine-nightly-slim
+FROM amazoncorretto:21-alpine-jdk
 MAINTAINER Hendi Santika "hendisantika@yahoo.co.id"
 VOLUME /tmp
 ARG JAR_FILE
