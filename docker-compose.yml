@@ -5,10 +5,10 @@ services:
     container_name: "fruit-database"
     ports:
       - "27017:27017"
-    command: --smallfiles
-  api:
-    image: fruit-service
-    ports:
-      - "8080:8080"
-    links:
-      - fruit-database
+#    command: --smallfiles
+#  api:
+#    image: fruit-service
+#    ports:
+#      - "8080:8080"
+#    links:
+#      - fruit-database
